@@ -83,36 +83,97 @@ select {
   padding: 1em;
 }
 
-.nav-component {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
+/* MOBILE */
 
 .primary-menu {
-  display: flex;
-  align-items: center;
-  gap: 2em;
+  display: none;
 }
 
 .user-el {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 0.5em;
+}
+
+.mobile-nav-flex {
   display: flex;
+  justify-content: space-between;
+}
+
+.david-alderman-logo-mob {
+  margin-right: 3em;
+  width: 200px;
+}
+
+.mobile-nav-container {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2em;
 }
 
-.cart-img {
+.cart-img-mob {
   width: 30px;
   height: auto;
   cursor: pointer;
 }
 
-.user-img {
+.user-img-mob {
   width: 30px;
   height: auto;
   cursor: pointer;
 }
 
-.david-alderman-logo {
-  width: 250px;
+/* ******* */
+/* DESKTOP */
+/* ******* */
+
+@media (min-width: 768px) {
+  .mobile-nav-flex {
+    display: none;
+  }
+
+  .nav-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .primary-menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .user-el {
+    display: flex;
+    gap: 2em;
+  }
+
+  .cart-img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .user-img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .david-alderman-logo {
+    margin-right: 3em;
+    width: 250px;
+  }
 }
